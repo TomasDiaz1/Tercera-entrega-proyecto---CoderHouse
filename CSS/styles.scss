@@ -1,0 +1,510 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+$colores:(
+    c-black: #0C0B0B,
+    c-white: #FCFCFC,
+    c-grey: #888888,
+    c-grey2: #65727c,
+    c-blue: #666f88,
+    c-blue2: #788199,
+    );
+
+
+section{
+.SN{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "h1 img button";
+    background-color: map-get($colores, c-grey);
+    height: 400px;
+    filter: opacity(80%);
+    
+   &:hover{
+    filter: opacity(100%);
+    transition: text 2s;
+    h1{
+        text-decoration: underline;
+    }
+   
+   }
+   
+   h1{
+    grid-area: h1;
+    align-self: center;
+    justify-self: center;
+    font-size: xx-large;
+   }
+   
+    img{
+        grid-area: img;
+        width: 300px;
+        justify-self: center;
+        align-self: center;
+        grid-area: img;
+        
+    &:hover{
+        animation-name: fotos;
+        animation-duration: 2s;
+    
+    }
+    }
+    button{
+        grid-area: button;
+        width: 150px;
+        height: 50px;
+        
+        justify-self: center;
+        align-self: center;
+        &:hover{
+            animation-name: botones;
+            animation-duration: 2s;
+            
+        }
+        a{
+            color: map-get($colores, c-white);
+            text-decoration: none;
+            font-size: larger;
+        }
+        
+    }
+  
+   
+
+
+   
+}
+.Remeras{
+    background-color: map-get($colores, c-blue);
+    grid-template-areas: "h2 img button";
+    @extend .SN;
+    transition: text 2s;
+    &:hover{
+        
+        transition: text 2s;
+        h2{
+            text-decoration: underline;
+        }
+       
+       }
+      
+    h2{
+        grid-area: h2;
+        align-self: center;
+        justify-self: center;
+        font-size: xx-large;
+       }
+       img{
+            grid-area: img;
+            width: 250px;
+            grid-area: img;
+            
+        &:hover{
+            animation-name: remeras;
+            animation-duration: 2s;
+            
+        }
+            
+            
+        }
+        button{
+            grid-area: button;
+            width: 150px;
+            height: 50px;
+            
+            justify-self: center;
+            align-self: center;
+            &:hover{
+                animation-name: botones;
+            animation-duration: 2s;
+            }
+        }
+    
+}
+
+.Hoodies{
+    background-color: map-get($colores, c-blue2);
+    grid-template-areas: "h3 img button";
+    @extend .SN;
+    transition: text 2s;
+    &:hover{
+        
+        transition: text 2s;
+        h3{
+            text-decoration: underline;
+        }
+       
+       }
+    h3{
+        grid-area: h3;
+        align-self: center;
+        justify-self: center;
+        font-size: xx-large;
+        
+       }
+       img{
+            grid-area: img;
+            transition: width 2s, height 2s;
+        &:hover{
+            animation-name: fotos;
+            animation-duration: 2s;
+            
+        }
+            
+            
+        }
+        button{
+            grid-area: button;
+            width: 150px;
+            height: 50px;
+            
+            justify-self: center;
+            align-self: center;
+            &:hover{
+                animation-name: botones;
+                animation-duration: 2s;
+                
+            }
+        }
+}
+.Camperas{
+background-color: map-get($colores, c-grey2);
+    grid-template-areas: "h4 img button";
+    @extend .SN;
+    transition: text 2s;
+    &:hover{
+        
+        transition: text 2s;
+        h4{
+            text-decoration: underline;
+        }
+       
+       }
+    h4{
+        grid-area: h4;
+        align-self: center;
+        justify-self: center;
+        font-size: xx-large;
+       }
+       img{
+            grid-area: img;
+            
+            
+        
+            
+            
+        }
+        button{
+            grid-area: button;
+            width: 150px;
+            height: 50px;
+            
+            justify-self: center;
+            align-self: center;
+            
+        }
+        }
+
+
+
+
+}
+
+
+
+/*Remeras.html*/
+
+.Seccion{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+
+}
+
+
+/*Sobrenosotros.html*/
+.Sobrenosotros{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+align-items: center;
+justify-content: center;
+
+    h1{
+        margin-top: 50px;
+font-size: 50px;
+text-align: center;
+
+&:hover{
+    text-decoration: underline;
+}
+    }
+    p{
+        font-size: 20px;
+        padding: 100px;
+    }
+    img{
+        width: 500px;
+        margin-left: 700px;
+        margin-bottom: 200px;
+        border: map-get($colores, c-black);
+        filter: drop-shadow(5px 5px 5px);
+        filter: blur(2px);
+        box-sizing: 1px;
+        border-radius: 5px;
+        &:hover{
+            filter: blur(0px);
+        }
+    }
+    }
+    h2{
+        text-align: center;
+        font-size: 50px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    
+
+
+/*Animaciones*/
+@keyframes fotos{
+    0%{
+        width: 300px;
+    }
+    100%{
+        width: 350px;
+    }
+}
+
+@keyframes remeras{
+    0%{
+        width: 250px;
+    }
+    100%{
+        width: 300px;
+    }
+}
+
+@keyframes botones{
+    0%{
+        filter: drop-shadow(0px 0px 0px);
+    }
+    100%{
+        filter: drop-shadow(5px 5px 5px);
+    }
+}
+
+
+/*Version mobile and medium*/
+@media screen and (max-width: 700px ) {
+    section{
+        
+        .SN{
+            
+            height: 300px;
+            filter: opacity(80%);
+            
+           &:hover{
+            filter: opacity(100%);
+            transition: text 2s;
+            h1{
+                text-decoration: underline;
+            }
+           
+           }
+           
+           h1{
+            font-size: medium;
+           }
+           
+            img{
+                grid-area: img;
+                width: 125px;
+                justify-self: center;
+                align-self: center;
+                &:hover{
+                    transition: none;
+        animation: none;
+                }
+                
+            
+            }
+            button{
+                grid-area: button;
+                width: 100px;
+                height: 50px;
+                
+                justify-self: center;
+                align-self: center;
+                &:hover{
+                    transition: none;
+        animation: none;
+                }
+                
+                a{
+                    color: map-get($colores, c-white);
+                    text-decoration: none;
+                    font-size: small;
+                }
+                
+            }
+          
+           
+        
+        
+           
+        }
+        .Remeras{
+            background-color: map-get($colores, c-blue);
+            grid-template-areas: "h2 img button";
+           
+            transition: text 2s;
+            &:hover{
+                
+                transition: text 2s;
+                h2{
+                    text-decoration: underline;
+                }
+               
+               }
+              
+            h2{
+                grid-area: h2;
+                align-self: center;
+                justify-self: center;
+                font-size: medium;
+               }
+               img{
+                    grid-area: img;
+                    width: 100px;
+                    
+                    &:hover{
+                        transition: none;
+            animation: none;
+                    }
+                
+                    
+                    
+                }
+                button{
+                    grid-area: button;
+                    width: 100px;
+                    height: 50px;
+                    
+                    justify-self: center;
+                    align-self: center;
+                    &:hover{
+                        transition: none;
+            animation: none;
+                    }
+                }
+            
+        }
+        
+        .Hoodies{
+            background-color: map-get($colores, c-blue2);
+            grid-template-areas: "h3 img button";
+            
+            transition: text 2s;
+            &:hover{
+                
+                transition: text 2s;
+                h3{
+                    text-decoration: underline;
+                }
+               
+               }
+            h3{
+                grid-area: h3;
+                align-self: center;
+                justify-self: center;
+                font-size: medium;
+                
+               }
+               img{
+                    grid-area: img;
+                    
+                    &:hover{
+                        transition: none;
+            animation: none;
+                    }
+                    
+                    
+                }
+                button{
+                    grid-area: button;
+                    width: 100px;
+                    height: 50px;
+                    
+                    justify-self: center;
+                    align-self: center;
+                    &:hover{
+                        transition: none;
+            animation: none;
+                    }
+                }
+        }
+        .Camperas{
+        background-color: map-get($colores, c-grey2);
+            grid-template-areas: "h4 img button";
+            
+            transition: text 2s;
+            &:hover{
+                
+                transition: text 2s;
+                h4{
+                    text-decoration: underline;
+                }
+               
+               }
+            h4{
+                grid-area: h4;
+                align-self: center;
+                justify-self: center;
+                font-size: medium;
+               }
+               img{
+                    grid-area: img;
+                    grid-area: img;
+                    &:hover{
+                        transition: none;
+            animation: none;
+                    }
+                
+                    
+                    
+                }
+                button{
+                    grid-area: button;
+                    width: 100px;
+                    height: 50px;
+                    
+                    justify-self: center;
+                    align-self: center;
+                    &:hover{
+                        transition: none;
+            animation: none;
+                    }
+                }
+                }
+    
+}
+.Seccion{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;
+    margin-top:50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+
+}
+}

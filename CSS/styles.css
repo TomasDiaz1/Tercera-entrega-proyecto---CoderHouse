@@ -1,0 +1,435 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+section .SN, section .Camperas, section .Hoodies, section .Remeras {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "h1 img button";
+  background-color: #888888;
+  height: 400px;
+  filter: opacity(80%);
+}
+section .SN:hover, section .Camperas:hover, section .Hoodies:hover, section .Remeras:hover {
+  filter: opacity(100%);
+  transition: text 2s;
+}
+section .SN:hover h1, section .Camperas:hover h1, section .Hoodies:hover h1, section .Remeras:hover h1 {
+  text-decoration: underline;
+}
+section .SN h1, section .Camperas h1, section .Hoodies h1, section .Remeras h1 {
+  grid-area: h1;
+  align-self: center;
+  justify-self: center;
+  font-size: xx-large;
+}
+section .SN img, section .Camperas img, section .Hoodies img, section .Remeras img {
+  grid-area: img;
+  width: 300px;
+  justify-self: center;
+  align-self: center;
+  grid-area: img;
+}
+section .SN img:hover, section .Camperas img:hover, section .Hoodies img:hover, section .Remeras img:hover {
+  -webkit-animation-name: fotos;
+          animation-name: fotos;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+section .SN button, section .Camperas button, section .Hoodies button, section .Remeras button {
+  grid-area: button;
+  width: 150px;
+  height: 50px;
+  justify-self: center;
+  align-self: center;
+}
+section .SN button:hover, section .Camperas button:hover, section .Hoodies button:hover, section .Remeras button:hover {
+  -webkit-animation-name: botones;
+          animation-name: botones;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+section .SN button a, section .Camperas button a, section .Hoodies button a, section .Remeras button a {
+  color: #FCFCFC;
+  text-decoration: none;
+  font-size: larger;
+}
+section .Remeras {
+  background-color: #666f88;
+  grid-template-areas: "h2 img button";
+  transition: text 2s;
+}
+section .Remeras:hover {
+  transition: text 2s;
+}
+section .Remeras:hover h2 {
+  text-decoration: underline;
+}
+section .Remeras h2 {
+  grid-area: h2;
+  align-self: center;
+  justify-self: center;
+  font-size: xx-large;
+}
+section .Remeras img {
+  grid-area: img;
+  width: 250px;
+  grid-area: img;
+}
+section .Remeras img:hover {
+  -webkit-animation-name: remeras;
+          animation-name: remeras;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+section .Remeras button {
+  grid-area: button;
+  width: 150px;
+  height: 50px;
+  justify-self: center;
+  align-self: center;
+}
+section .Remeras button:hover {
+  -webkit-animation-name: botones;
+          animation-name: botones;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+section .Hoodies {
+  background-color: #788199;
+  grid-template-areas: "h3 img button";
+  transition: text 2s;
+}
+section .Hoodies:hover {
+  transition: text 2s;
+}
+section .Hoodies:hover h3 {
+  text-decoration: underline;
+}
+section .Hoodies h3 {
+  grid-area: h3;
+  align-self: center;
+  justify-self: center;
+  font-size: xx-large;
+}
+section .Hoodies img {
+  grid-area: img;
+  transition: width 2s, height 2s;
+}
+section .Hoodies img:hover {
+  -webkit-animation-name: fotos;
+          animation-name: fotos;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+section .Hoodies button {
+  grid-area: button;
+  width: 150px;
+  height: 50px;
+  justify-self: center;
+  align-self: center;
+}
+section .Hoodies button:hover {
+  -webkit-animation-name: botones;
+          animation-name: botones;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+section .Camperas {
+  background-color: #65727c;
+  grid-template-areas: "h4 img button";
+  transition: text 2s;
+}
+section .Camperas:hover {
+  transition: text 2s;
+}
+section .Camperas:hover h4 {
+  text-decoration: underline;
+}
+section .Camperas h4 {
+  grid-area: h4;
+  align-self: center;
+  justify-self: center;
+  font-size: xx-large;
+}
+section .Camperas img {
+  grid-area: img;
+}
+section .Camperas button {
+  grid-area: button;
+  width: 150px;
+  height: 50px;
+  justify-self: center;
+  align-self: center;
+}
+
+/*Remeras.html*/
+.Seccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+
+/*Sobrenosotros.html*/
+.Sobrenosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.Sobrenosotros h1 {
+  margin-top: 50px;
+  font-size: 50px;
+  text-align: center;
+}
+.Sobrenosotros h1:hover {
+  text-decoration: underline;
+}
+.Sobrenosotros p {
+  font-size: 20px;
+  padding: 100px;
+}
+.Sobrenosotros img {
+  width: 500px;
+  margin-left: 700px;
+  margin-bottom: 200px;
+  border: #0C0B0B;
+  filter: drop-shadow(5px 5px 5px);
+  filter: blur(2px);
+  box-sizing: 1px;
+  border-radius: 5px;
+}
+.Sobrenosotros img:hover {
+  filter: blur(0px);
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+h2:hover {
+  text-decoration: underline;
+}
+
+/*Animaciones*/
+@-webkit-keyframes fotos {
+  0% {
+    width: 300px;
+  }
+  100% {
+    width: 350px;
+  }
+}
+@keyframes fotos {
+  0% {
+    width: 300px;
+  }
+  100% {
+    width: 350px;
+  }
+}
+@-webkit-keyframes remeras {
+  0% {
+    width: 250px;
+  }
+  100% {
+    width: 300px;
+  }
+}
+@keyframes remeras {
+  0% {
+    width: 250px;
+  }
+  100% {
+    width: 300px;
+  }
+}
+@-webkit-keyframes botones {
+  0% {
+    filter: drop-shadow(0px 0px 0px);
+  }
+  100% {
+    filter: drop-shadow(5px 5px 5px);
+  }
+}
+@keyframes botones {
+  0% {
+    filter: drop-shadow(0px 0px 0px);
+  }
+  100% {
+    filter: drop-shadow(5px 5px 5px);
+  }
+}
+/*Version mobile and medium*/
+@media screen and (max-width: 700px) {
+  section .SN, section .Remeras, section .Hoodies, section .Camperas {
+    height: 300px;
+    filter: opacity(80%);
+  }
+  section .SN:hover, section .Remeras:hover, section .Hoodies:hover, section .Camperas:hover {
+    filter: opacity(100%);
+    transition: text 2s;
+  }
+  section .SN:hover h1, section .Remeras:hover h1, section .Hoodies:hover h1, section .Camperas:hover h1 {
+    text-decoration: underline;
+  }
+  section .SN h1, section .Remeras h1, section .Hoodies h1, section .Camperas h1 {
+    font-size: medium;
+  }
+  section .SN img, section .Remeras img, section .Hoodies img, section .Camperas img {
+    grid-area: img;
+    width: 125px;
+    justify-self: center;
+    align-self: center;
+  }
+  section .SN img:hover, section .Remeras img:hover, section .Hoodies img:hover, section .Camperas img:hover {
+    transition: none;
+    -webkit-animation: none;
+            animation: none;
+  }
+  section .SN button, section .Remeras button, section .Hoodies button, section .Camperas button {
+    grid-area: button;
+    width: 100px;
+    height: 50px;
+    justify-self: center;
+    align-self: center;
+  }
+  section .SN button:hover, section .Remeras button:hover, section .Hoodies button:hover, section .Camperas button:hover {
+    transition: none;
+    -webkit-animation: none;
+            animation: none;
+  }
+  section .SN button a, section .Remeras button a, section .Hoodies button a, section .Camperas button a {
+    color: #FCFCFC;
+    text-decoration: none;
+    font-size: small;
+  }
+  section .Remeras {
+    background-color: #666f88;
+    grid-template-areas: "h2 img button";
+    transition: text 2s;
+  }
+  section .Remeras:hover {
+    transition: text 2s;
+  }
+  section .Remeras:hover h2 {
+    text-decoration: underline;
+  }
+  section .Remeras h2 {
+    grid-area: h2;
+    align-self: center;
+    justify-self: center;
+    font-size: medium;
+  }
+  section .Remeras img {
+    grid-area: img;
+    width: 100px;
+  }
+  section .Remeras img:hover {
+    transition: none;
+    -webkit-animation: none;
+            animation: none;
+  }
+  section .Remeras button {
+    grid-area: button;
+    width: 100px;
+    height: 50px;
+    justify-self: center;
+    align-self: center;
+  }
+  section .Remeras button:hover {
+    transition: none;
+    -webkit-animation: none;
+            animation: none;
+  }
+  section .Hoodies {
+    background-color: #788199;
+    grid-template-areas: "h3 img button";
+    transition: text 2s;
+  }
+  section .Hoodies:hover {
+    transition: text 2s;
+  }
+  section .Hoodies:hover h3 {
+    text-decoration: underline;
+  }
+  section .Hoodies h3 {
+    grid-area: h3;
+    align-self: center;
+    justify-self: center;
+    font-size: medium;
+  }
+  section .Hoodies img {
+    grid-area: img;
+  }
+  section .Hoodies img:hover {
+    transition: none;
+    -webkit-animation: none;
+            animation: none;
+  }
+  section .Hoodies button {
+    grid-area: button;
+    width: 100px;
+    height: 50px;
+    justify-self: center;
+    align-self: center;
+  }
+  section .Hoodies button:hover {
+    transition: none;
+    -webkit-animation: none;
+            animation: none;
+  }
+  section .Camperas {
+    background-color: #65727c;
+    grid-template-areas: "h4 img button";
+    transition: text 2s;
+  }
+  section .Camperas:hover {
+    transition: text 2s;
+  }
+  section .Camperas:hover h4 {
+    text-decoration: underline;
+  }
+  section .Camperas h4 {
+    grid-area: h4;
+    align-self: center;
+    justify-self: center;
+    font-size: medium;
+  }
+  section .Camperas img {
+    grid-area: img;
+    grid-area: img;
+  }
+  section .Camperas img:hover {
+    transition: none;
+    -webkit-animation: none;
+            animation: none;
+  }
+  section .Camperas button {
+    grid-area: button;
+    width: 100px;
+    height: 50px;
+    justify-self: center;
+    align-self: center;
+  }
+  section .Camperas button:hover {
+    transition: none;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .Seccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=styles.css.map */
