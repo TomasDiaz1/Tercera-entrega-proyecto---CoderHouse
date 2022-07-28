@@ -166,12 +166,17 @@ section .Camperas button {
 }
 
 /*Remeras.html*/
+h1 {
+  margin-top: 100px;
+  text-align: center;
+}
+
 .Seccion {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 132px;
+  margin-bottom: 132px;
   flex-wrap: wrap;
 }
 
@@ -215,6 +220,23 @@ h2 {
   font-size: 50px;
 }
 h2:hover {
+  text-decoration: underline;
+}
+h2 h1 {
+  margin-top: 50px;
+  font-size: 25px;
+  text-align: center;
+}
+h2 h1:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  margin-top: 50px;
+  font-size: 25px;
+  text-align: center;
+}
+h3:hover {
   text-decoration: underline;
 }
 
@@ -296,7 +318,7 @@ h2:hover {
   }
   section .SN button, section .Remeras button, section .Hoodies button, section .Camperas button {
     grid-area: button;
-    width: 100px;
+    width: 95px;
     height: 50px;
     justify-self: center;
     align-self: center;
@@ -309,7 +331,7 @@ h2:hover {
   section .SN button a, section .Remeras button a, section .Hoodies button a, section .Camperas button a {
     color: #FCFCFC;
     text-decoration: none;
-    font-size: small;
+    font-size: smaller;
   }
   section .Remeras {
     background-color: #666f88;
@@ -431,5 +453,37 @@ h2:hover {
     margin-top: 50px;
     margin-bottom: 50px;
     flex-wrap: wrap;
+  }
+  .Sobrenosotros h1 {
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .Sobrenosotros h1:hover {
+    text-decoration: underline;
+  }
+  .Sobrenosotros p {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .Sobrenosotros img {
+    width: 300px;
+    margin-left: 50px;
+    margin-bottom: 200px;
+    border: #0C0B0B;
+    filter: drop-shadow(5px 5px 5px);
+    filter: blur(2px);
+    box-sizing: 1px;
+    border-radius: 5px;
+  }
+  .Sobrenosotros img:hover {
+    filter: blur(0px);
+  }
+  h2 {
+    text-align: center;
+    font-size: 50px;
+  }
+  h2:hover {
+    text-decoration: underline;
   }
 }/*# sourceMappingURL=styles.css.map */

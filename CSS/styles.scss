@@ -215,14 +215,17 @@ background-color: map-get($colores, c-grey2);
 
 
 /*Remeras.html*/
-
+h1{
+    margin-top: 100px;
+    text-align: center;
+}
 .Seccion{
     display: flex;
     flex-direction: row;
     
     justify-content: space-around;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 132px;
+    margin-bottom: 132px;
     flex-wrap: wrap;
 
 }
@@ -270,7 +273,25 @@ text-align: center;
         &:hover{
             text-decoration: underline;
         }
+        h1{
+            margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    
+    &:hover{
+        text-decoration: underline;
     }
+    }
+    }
+    h3{
+        margin-top: 50px;
+font-size: 25px;
+text-align: center;
+
+&:hover{
+    text-decoration: underline;
+}
+}
     
 
 
@@ -339,7 +360,7 @@ text-align: center;
             }
             button{
                 grid-area: button;
-                width: 100px;
+                width: 95px;
                 height: 50px;
                 
                 justify-self: center;
@@ -352,7 +373,7 @@ text-align: center;
                 a{
                     color: map-get($colores, c-white);
                     text-decoration: none;
-                    font-size: small;
+                    font-size: smaller;
                 }
                 
             }
@@ -432,6 +453,7 @@ text-align: center;
                img{
                     grid-area: img;
                     
+                    
                     &:hover{
                         transition: none;
             animation: none;
@@ -507,4 +529,44 @@ text-align: center;
     flex-wrap: wrap;
 
 }
+.Sobrenosotros{
+    
+    
+        h1{
+            margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    
+    &:hover{
+        text-decoration: underline;
+    }
+        }
+        p{
+            font-size: 20px;
+            padding: 20px;
+        }
+        img{
+            width: 300px;
+            margin-left: 50px;
+            margin-bottom: 200px;
+            border: map-get($colores, c-black);
+            filter: drop-shadow(5px 5px 5px);
+            filter: blur(2px);
+            box-sizing: 1px;
+            border-radius: 5px;
+            &:hover{
+                filter: blur(0px);
+            }
+        }
+        }
+        h2{
+            text-align: center;
+            font-size: 50px;
+            &:hover{
+                text-decoration: underline;
+            }
+            
+        }
+        
+        
 }
