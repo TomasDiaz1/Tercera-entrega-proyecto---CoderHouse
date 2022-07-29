@@ -14,7 +14,12 @@ $colores:(
 
 
 section{
+   
 .SN{
+    background-image: url(../Media/fondosn.gif);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "h1 img button";
@@ -216,10 +221,17 @@ background-color: map-get($colores, c-grey2);
 
 /*Remeras.html*/
 h1{
-    margin-top: 100px;
+    
     text-align: center;
+    padding: 50px;
 }
+.b-seccion{
+    background-image: url(../Media/fondoseccion.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
 .Seccion{
+    
     display: flex;
     flex-direction: row;
     
@@ -229,10 +241,15 @@ h1{
     flex-wrap: wrap;
 
 }
+}
 
 
 /*Sobrenosotros.html*/
 .Sobrenosotros{
+    background-image: url(../Media/fondoseccion.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -240,10 +257,12 @@ align-content: center;
 align-items: center;
 justify-content: center;
 
+
     h1{
         margin-top: 50px;
 font-size: 50px;
 text-align: center;
+
 
 &:hover{
     text-decoration: underline;
@@ -343,7 +362,7 @@ text-align: center;
            }
            
            h1{
-            font-size: medium;
+            font-size: small;
            }
            
             img{
@@ -536,6 +555,7 @@ text-align: center;
             margin-top: 50px;
     font-size: 25px;
     text-align: center;
+    
     
     &:hover{
         text-decoration: underline;
